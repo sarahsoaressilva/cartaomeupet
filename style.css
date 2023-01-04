@@ -8,14 +8,26 @@
     text-decoration: none;
 }
 
+:root {
+    --text-color-primary: #023047;
+    --btn-color: #FFB703;
+    --btn-color-dark: #ffe94e;
+    --white-color: #F5F5F5;
+    --cor-destaque: #219EBC;
+}
+
 body {
     font-size: 100%;
-    background-color: #F5F5F5;
+    background-color: var(--white-color);
 }
 
 
-h1 {
+h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-size: 15px;
 }
 
 p {
@@ -33,13 +45,10 @@ p {
     font-weight: 700;
 }
 
-
-:root {
-    --text-color-primary: #023047;
-    --btn-color: #FFB703;
-    --white-color: #F5F5F5;
-    --cor-destaque: #219EBC;
+.btn-principal:hover {
+    background-color: var(--btn-color-dark);
 }
+
 
 
 /* header - barra de menu */
@@ -87,7 +96,6 @@ p {
     height: 400px;
 }
 
-/* titulo, paragrafo e botão da sessao um */
 .conteiner-sessao-escrita {
     display: flex;
     flex-direction: column;
@@ -117,4 +125,62 @@ p {
     align-items: center;
     gap: 30px;
     margin-top: 160px;
+}
+
+/* beneficios do pet */
+
+.sessao-terceira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    margin-top: 160px;
+    gap: 30px;
+}
+
+.foto-beneficios-arredondada {
+    height: 200px;
+    border-radius: 100%;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.beneficio:hover {
+    background-color: var(--cor-destaque);
+    transition: 0.5s ease-in;
+}
+
+.container-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.caixa-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+    height: 200px;
+    gap: 30px;
+}
+
+.caixa-item-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    height: 200px;
+    gap: 30px;
+}
+
+/* rodapé final da página */
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid var(--cor-destaque);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }
