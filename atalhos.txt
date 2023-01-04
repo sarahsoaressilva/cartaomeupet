@@ -1,0 +1,4 @@
+! > inicia html
+
+UTF-8 > caracteres
+viewport > adaptável a outros dispositivos móveis

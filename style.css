@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background-color: #F5F5F5;
+}
+
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+.btn-principal {
+    background-color: var(--btn-color);
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    color: var(--text-color-primary);
+    font-weight: 700;
+}
+
+
+:root {
+    --text-color-primary: #023047;
+    --btn-color: #FFB703;
+    --white-color: #F5F5F5;
+    --cor-destaque: #219EBC;
+}
+
+
+/* header - barra de menu */
+
+.menu {
+    display: flex;
+    flex-direction: row; /* padrao, não precisa colocar necessariamente */
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo-menu {
+    height: 50px;
+}
+
+.menu-itens {
+    display: flex;
+    gap: 30px; /*distancia entre os elementos*/
+}
+
+.menu-item {
+    font-family: 'Lato', sans-serif;
+    color: var(--text-color-primary);
+}
+
+/* sessao inicial */
+
+.conteudo {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.sessao-primaria {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 74px;
+    margin-left: 139px;
+    gap: 50px;
+}
+
+.video-inicial {
+    height: 400px;
+}
+
+/* titulo, paragrafo e botão da sessao um */
+.conteiner-sessao-escrita {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* sessao dados do negocio */
+
+.dados-contratados {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 132px;
+}
+
+.dados-contratados img {
+    height: 250px;
+}
+
+/*sessao secundaria - clientes */
+
+.sessao-secundaria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 160px;
+}
