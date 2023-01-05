@@ -13,6 +13,7 @@
     --btn-color: #FFB703;
     --btn-color-dark: #ffe94e;
     --white-color: #F5F5F5;
+    --white-color-darker: #f0f0f0;
     --cor-destaque: #219EBC;
 }
 
@@ -24,14 +25,20 @@ body {
 
 h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
+    color: var(--text-color-primary);
 }
 
 h2 {
+    font-size: 16px;
+}
+
+h3 {
     font-size: 15px;
 }
 
 p {
     font-family: 'Lato', sans-serif;
+    color: var(--text-color-primary);
 }
 
 .btn-principal {
@@ -43,12 +50,28 @@ p {
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
     color: var(--text-color-primary);
     font-weight: 700;
+    cursor: pointer;
 }
 
 .btn-principal:hover {
     background-color: var(--btn-color-dark);
 }
 
+.btn-secundario {
+    background-color: var(--btn-color);
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    color: var(--text-color-primary);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-secundario:hover {
+    background-color: var(--btn-color-dark);
+}
 
 
 /* header - barra de menu */
@@ -127,6 +150,13 @@ p {
     margin-top: 160px;
 }
 
+
+.h1-clientes{
+    border-top: 0.4px solid var(--cor-destaque);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 /* beneficios do pet */
 
 .sessao-terceira {
@@ -175,6 +205,85 @@ p {
     gap: 30px;
 }
 
+
+/* sessao quarta - tudo na palma da sua mao */
+
+.sessao-quarta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 160px;
+    gap: 30px;
+
+}
+
+
+/* Sessao quinta - redes credenciadas */
+
+/*alinha os cards em coluna */
+.sessao-quinta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 160px;
+    gap: 30px;
+}
+
+/* alinha os cards em linha */
+.box-grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 350px;
+    gap: 0.5rem;
+    margin-bottom: 0px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 400px;
+    height: 300px;
+    max-height: 300px;
+    gap: 1rem;
+
+    background-color: var(--white-color-darker);
+    box-shadow: 20px 20px 50px -30px var(--cor-destaque);
+    border-radius: 32px;
+}
+
+.card h3 {
+    color: var(--cor-destaque);
+}
+
+.card p {
+    max-width: 300px;
+}
+
+.card button {
+    margin-bottom: 30px;
+}
+
+.icon {
+    width: 64px;
+    height: 64px;
+    margin-top: 30px;
+}
+
+.arruma-icon {
+    width: 64px;
+    height: 64px;
+}
+
+
 /* rodapé final da página */
 .rodape {
     padding: 32px;
@@ -183,4 +292,22 @@ p {
     flex-direction: row;
     justify-content: center;
 
+}
+
+
+/* RESPONSIVIDADE */
+
+
+@media screen and (max-width: 1000px) {
+    .box-grid {
+        flex-direction: column;
+        margin-top: 500px;
+        margin-bottom: 500px;
+    }
+    
+    .card {
+       height: 500px;
+    }
+
+    
 }
